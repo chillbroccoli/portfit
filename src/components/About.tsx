@@ -2,9 +2,9 @@ import { Container } from "./Container";
 
 export function About() {
   return (
-    <div id="about" className="px-12 py-20 bg-lime-600/20">
+    <div id="about" className="px-6 py-20 lg:px-14 bg-lime-600/20">
       <h3 className="text-4xl font-bold tracking-tight text-center">O nas</h3>
-      <p className="w-1/2 mx-auto mt-6 text-lg font-light tracking-tight text-center text-gray-200">
+      <p className="w-full mx-auto mt-6 text-lg font-light tracking-tight text-center text-gray-200 md:w-1/2">
         Klub Portfit w Elblągu to doskonale wyposażona siłowania oferująca m.in.
         ćwiczenia fitness power, kardio, a także zajęcia grupowe typu zumba,
         aerobik i wiele innych. Wszystkich zainteresowanych serdecznie
