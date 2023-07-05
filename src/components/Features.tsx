@@ -14,13 +14,13 @@ const imgs = [
 
 export function Features() {
   return (
-    <div id="features" className="py-10 mt-8">
+    <div id="features" className="px-6 py-10 mt-8 lg:px-14">
       <h2 className="text-4xl font-bold tracking-tight text-center">
         Oferujemy coś dla każdego
       </h2>
 
       <Container className="mt-8">
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {imgs.map((img, index) => (
             <div
               key={index}
