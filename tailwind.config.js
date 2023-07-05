@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('/hero.jpg')",
+        "hero-mobile":
+          "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('/fitness-power.jpg')",
       },
     },
   },
