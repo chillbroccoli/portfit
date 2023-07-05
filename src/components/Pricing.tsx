@@ -52,9 +52,9 @@ export function Pricing() {
               {tier.name}
             </h3>
             {tier.mostPopular ? (
-              <p className="rounded-full bg-lime-600/30 px-2.5 py-1 text-xs font-semibold leading-5 text-lime-700">
+              <span className="hidden lg:inline-flex rounded-full text-center bg-lime-600/30 px-2.5 py-1 text-xs font-semibold leading-5 text-lime-700">
                 Najbardziej popularny
-              </p>
+              </span>
             ) : null}
           </div>
           <p className="flex items-baseline mt-6 gap-x-1">
