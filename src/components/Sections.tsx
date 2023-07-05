@@ -46,13 +46,13 @@ const sections = [
 
 export function Sections() {
   return (
-    <div className="py-12 mt-12 space-y-32 px-14">
+    <div className="px-6 py-12 mt-2 space-y-12 lg:mt-12 lg:space-y-32 lg:px-14">
       {sections.map((section, index) => (
-        <div key={index} className="grid grid-cols-2 gap-8">
+        <div key={index} className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div
             className={cn(
               "flex flex-col items-start",
-              index % 2 == 1 ? "order-last" : ""
+              index % 2 == 1 ? "lg:order-last" : ""
             )}
           >
             <Badge>{section.title}</Badge>
@@ -62,8 +62,10 @@ export function Sections() {
             <ul className="mt-6">
               {section.features.map((feature, index) => (
                 <li key={index} className="flex items-center mt-4 space-x-2">
-                  <IconCircleCheck size={24} className="text-lime-500" />
-                  <p className="text-lg font-light">{feature}</p>
+                  <div>
+                    <IconCircleCheck className="w-6 h-6 text-lime-500" />
+                  </div>
+                  <span className="text-lg font-light">{feature}</span>
                 </li>
               ))}
             </ul>
