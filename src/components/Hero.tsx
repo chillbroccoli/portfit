@@ -20,7 +20,7 @@ export function Hero() {
   return (
     <Disclosure
       as="div"
-      id="home"
+      id="strona-glowna"
       className="flex flex-col object-cover bg-center bg-no-repeat bg-hero-mobile md:bg-hero lg:bg-center"
     >
       {({ open }) => (
@@ -74,7 +74,7 @@ export function Hero() {
               </div>
             </Disclosure.Panel>
           </div>
-          <div className="flex flex-col items-center justify-center py-16 sm:py-32 md:py-64 grow">
+          <div className="flex flex-col items-center justify-center py-16 sm:py-32 grow">
             <div className="w-3/4 mx-auto text-center">
               <h1 className="text-5xl font-bold tracking-tighter lg:text-7xl text-lime-500">
                 Osiągnij swoje najlepsze ja!
@@ -100,7 +100,7 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center justify-center mt-6 space-x-4 md:flex-row">
+            <div className="flex flex-col items-center justify-center mt-12 space-x-4 sm:mt-6 md:flex-row">
               <Avatar src="https://lh3.googleusercontent.com/a-/AD_cMMRFEKOqPgHAcaNRXJpSg343A11PRRE7Te0W4UDae5bnGg=w60-h60-p-rp-mo-br100" />
               <p className="w-3/4 mt-4 text-lg font-light tracking-tight text-gray-200 md:mt-0 lg:w-1/2">
                 &ldquo;Elegancko. Sporo uczęszczających ale nie brakuje sprzętu.
@@ -109,7 +109,7 @@ export function Hero() {
               </p>
             </div>
           </div>
-          <div className="mb-16">
+          <div className="mb-16 sm:mt-20">
             <Cards />
           </div>
         </>

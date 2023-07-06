@@ -4,7 +4,7 @@ import { features } from "@/lib/constants/features";
 
 export function Features() {
   return (
-    <div id="features" className="px-6 py-10 mt-8 lg:px-14">
+    <div id="oferta-klubu" className="px-6 py-10 mt-8 lg:px-14">
       <h2 className="text-4xl font-bold tracking-tight text-center">
         Oferujemy coś dla każdego
       </h2>

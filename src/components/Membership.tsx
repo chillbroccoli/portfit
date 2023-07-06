@@ -2,7 +2,7 @@ import { Pricing } from "./Pricing";
 
 export function Membership() {
   return (
-    <div id="membership" className="px-6 py-20 lg:px-14 bg-lime-600/20">
+    <div id="czlonkostwo" className="px-6 py-20 lg:px-14 bg-lime-600/20">
       <h3 className="text-4xl font-bold tracking-tight text-center">
         Członkostwo
       </h3>
