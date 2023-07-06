@@ -1,12 +1,32 @@
 import { cn } from "@/lib/cn";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "PortFit",
-  description: "PortFit is a gym in Elbląg, Poland",
+  keywords: "siłownia, fitness, elbląg, portfit, zajęcia grupowe, aerobik",
+  description:
+    "Klub Portfit w Elblągu to doskonale wyposażona siłowania oferująca m.in. ćwiczenia fitness power, kardio, a także zajęcia grupowe typu  zumba, aerobik i wiele innych. Wszystkich zainteresowanych serdecznie zapraszamy do kontaktu.",
+  colorScheme: "dark",
+  openGraph: {
+    title: "PortFit",
+    description:
+      "Klub Portfit w Elblągu to doskonale wyposażona siłowania oferująca m.in. ćwiczenia fitness power, kardio, a także zajęcia grupowe typu  zumba, aerobik i wiele innych. Wszystkich zainteresowanych serdecznie zapraszamy do kontaktu.",
+    type: "website",
+    locale: "pl_PL",
+    url: "https://portfit.pl",
+    images: ["/favicon.ico"],
+  },
+  twitter: {
+    title: "PortFit",
+    description:
+      "Klub Portfit w Elblągu to doskonale wyposażona siłowania oferująca m.in. ćwiczenia fitness power, kardio, a także zajęcia grupowe typu  zumba, aerobik i wiele innych. Wszystkich zainteresowanych serdecznie zapraszamy do kontaktu.",
+    card: "summary_large_image",
+    images: ["/favicon.ico"],
+  },
 };
 
 export default function RootLayout({
