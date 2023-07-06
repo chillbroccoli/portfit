@@ -74,7 +74,7 @@ export function Hero() {
               </div>
             </Disclosure.Panel>
           </div>
-          <div className="flex flex-col items-center justify-center py-32 md:py-64 grow">
+          <div className="flex flex-col items-center justify-center py-20 sm:py-32 md:py-64 grow">
             <div className="w-3/4 mx-auto text-center">
               <h1 className="text-5xl font-bold tracking-tighter lg:text-7xl text-lime-500">
                 Osiągnij swoje najlepsze ja!
