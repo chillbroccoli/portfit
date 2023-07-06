@@ -8,11 +8,12 @@ import {
 } from "@tabler/icons-react";
 import { Disclosure } from "@headlessui/react";
 
+import { cn } from "@/lib/cn";
+
 import { Container } from "./Container";
 import { Logo } from "./Logo";
 import { Avatar } from "./Avatar";
-import { cn } from "@/lib/cn";
-import { usePathname } from "next/navigation";
+import { Cards } from "./Cards";
 
 const navigation = [
   { name: "Strona Główna", href: "#home" },
@@ -26,13 +27,11 @@ const navigation = [
 ];
 
 export function Hero() {
-  const pathname = usePathname();
-
   return (
     <Disclosure
       as="div"
       id="home"
-      className="bg-hero-mobile md:bg-hero h-[95vh] lg:h-[90vh] flex flex-col bg-center lg:bg-center bg-no-repeat object-cover"
+      className="flex flex-col object-cover bg-center bg-no-repeat bg-hero-mobile md:bg-hero lg:bg-center"
     >
       {({ open }) => (
         <>
@@ -48,7 +47,10 @@ export function Hero() {
               <ul className="items-center hidden gap-x-5 lg:flex">
                 {navigation.map((item, index) => (
                   <li key={index}>
-                    <a href={item.href} className="text-gray-200">
+                    <a
+                      href={item.href}
+                      className="text-gray-100 transition-all duration-200 ease-in-out hover:text-gray-300"
+                    >
                       {item.name}
                     </a>
                   </li>
@@ -72,7 +74,7 @@ export function Hero() {
                     as="a"
                     href={item.href}
                     className={cn(
-                      "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      "text-gray-300 hover:text-white",
                       "block rounded-md px-3 py-2 text-base font-medium"
                     )}
                   >
@@ -82,7 +84,7 @@ export function Hero() {
               </div>
             </Disclosure.Panel>
           </div>
-          <div className="flex flex-col items-center justify-center grow">
+          <div className="flex flex-col items-center justify-center py-32 md:py-64 grow">
             <div className="w-3/4 mx-auto text-center">
               <h1 className="text-5xl font-bold tracking-tighter lg:text-7xl text-lime-500">
                 Osiągnij swoje najlepsze ja!
@@ -116,6 +118,9 @@ export function Hero() {
                 Polecam i pozdrawiam!&rdquo;
               </p>
             </div>
+          </div>
+          <div className="mb-16">
+            <Cards />
           </div>
         </>
       )}
