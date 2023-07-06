@@ -14,17 +14,7 @@ import { Container } from "./Container";
 import { Logo } from "./Logo";
 import { Avatar } from "./Avatar";
 import { Cards } from "./Cards";
-
-const navigation = [
-  { name: "Strona Główna", href: "#home" },
-  { name: "Oferta Klubu", href: "#features" },
-  { name: "Nasz Cennik", href: "#membership" },
-  { name: "O nas", href: "#about" },
-  {
-    name: "Strefa Klienta",
-    href: "https://portfit-elblag.cms.efitness.com.pl/",
-  },
-];
+import { navigation } from "@/lib/constants/navigation";
 
 export function Hero() {
   return (

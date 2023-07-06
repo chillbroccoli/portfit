@@ -1,24 +1,4 @@
-import { IconBrandFacebook } from "@tabler/icons-react";
-
-const navigation = {
-  main: [
-    { name: "Strona Główna", href: "#home" },
-    { name: "Oferta Klubu", href: "#features" },
-    { name: "Nasz Cennik", href: "#membership" },
-    { name: "O nas", href: "#about" },
-    {
-      name: "Strefa Klienta",
-      href: "https://portfit-elblag.cms.efitness.com.pl/",
-    },
-  ],
-  social: [
-    {
-      name: "Facebook",
-      href: "https://www.facebook.com/PortFit-636610263144416/",
-      icon: IconBrandFacebook,
-    },
-  ],
-};
+import { footerNavigation } from "@/lib/constants/navigation";
 
 export default function Footer() {
   return (
@@ -28,7 +8,7 @@ export default function Footer() {
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
           aria-label="Footer"
         >
-          {navigation.main.map((item) => (
+          {footerNavigation.main.map((item) => (
             <div key={item.name} className="pb-6">
               <a
                 href={item.href}
@@ -40,7 +20,7 @@ export default function Footer() {
           ))}
         </nav>
         <div className="flex justify-center mt-10 space-x-10">
-          {navigation.social.map((item) => (
+          {footerNavigation.social.map((item) => (
             <a
               key={item.name}
               href={item.href}
