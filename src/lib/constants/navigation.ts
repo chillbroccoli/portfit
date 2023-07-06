@@ -1,10 +1,10 @@
 import { IconBrandFacebook } from "@tabler/icons-react";
 
 export const navigation = [
-  { name: "Strona Główna", href: "#home" },
-  { name: "Oferta Klubu", href: "#features" },
-  { name: "Nasz Cennik", href: "#membership" },
-  { name: "O nas", href: "#about" },
+  { name: "Strona Główna", href: "#strona-glowna" },
+  { name: "Oferta Klubu", href: "#oferta-klubu" },
+  { name: "Nasz Cennik", href: "#czlonkostwo" },
+  { name: "O nas", href: "#o-nas" },
   {
     name: "Strefa Klienta",
     href: "https://portfit-elblag.cms.efitness.com.pl/",
