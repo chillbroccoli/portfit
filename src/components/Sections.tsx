@@ -32,8 +32,12 @@ export function Sections() {
               ))}
             </ul>
           </div>
-          <div className="relative overflow-hidden rounded-md shadow-lg shadow-lime-600/20">
-            <Image src={section.imgSrc} alt="" />
+          <div
+            className={cn(
+              section.imgBg,
+              "relative h-[700px] bg-center bg-no-repeat object-cover overflow-hidden rounded-md shadow-lg shadow-lime-600/20"
+            )}
+          >
             <div className="absolute inset-0 bg-lime-700/20"></div>
           </div>
         </div>

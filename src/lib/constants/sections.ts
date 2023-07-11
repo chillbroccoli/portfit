@@ -1,6 +1,6 @@
-import section1 from "@/assets/images/section-1.jpg";
-import section2 from "@/assets/images/section-2.jpg";
-import section3 from "@/assets/images/section-3.jpg";
+import section1 from "@/assets/images/power.jpg";
+import section2 from "@/assets/images/instructor-2.jpeg";
+import section3 from "@/assets/images/group.jpeg";
 
 export const sections = [
   {
@@ -12,7 +12,7 @@ export const sections = [
       "Sprzęt najwyższej jakości",
       "Szkolenie z doświadczonymi instruktorami",
     ],
-    imgSrc: section1,
+    imgBg: "bg-power",
   },
   {
     title: "Trening personalny",
@@ -23,7 +23,7 @@ export const sections = [
       "Motywacja i wsparcie",
       "Analiza postępu",
     ],
-    imgSrc: section2,
+    imgBg: "bg-instructor",
   },
   {
     title: "Wydarzenia tylko dla członków",
@@ -34,6 +34,6 @@ export const sections = [
       "Konkursy i turnieje",
       "Rabaty i promocje",
     ],
-    imgSrc: section3,
+    imgBg: "bg-group",
   },
 ];

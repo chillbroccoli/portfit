@@ -9,27 +9,17 @@ export function Pricing() {
         <div
           key={tier.id}
           className={cn(
-            tier.mostPopular
-              ? "ring-2 ring-lime-600 bg-lime-50"
-              : "ring-1 ring-gray-200 bg-gray-50",
+            "even:ring-lime-600 even:bg-lime-100 ring-1 ring-gray-200 bg-gray-50",
             "rounded-3xl p-8 xl:p-10"
           )}
         >
           <div className="flex items-center justify-between gap-x-4">
             <h3
               id={tier.id}
-              className={cn(
-                tier.mostPopular ? "text-lime-600" : "text-gray-900",
-                "text-lg font-semibold leading-8"
-              )}
+              className={cn("text-gray-900", "text-lg font-semibold leading-8")}
             >
               {tier.name}
             </h3>
-            {tier.mostPopular ? (
-              <span className="hidden lg:inline-flex rounded-full text-center bg-lime-600/30 px-2.5 py-1 text-xs font-semibold leading-5 text-lime-700">
-                Najbardziej popularny
-              </span>
-            ) : null}
           </div>
           <p className="flex items-baseline mt-6 gap-x-1">
             <span className="text-4xl font-bold tracking-tight text-gray-900">
