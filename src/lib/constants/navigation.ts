@@ -5,10 +5,6 @@ export const navigation = [
   { name: "Oferta Klubu", href: "#oferta-klubu" },
   { name: "Nasz Cennik", href: "#czlonkostwo" },
   { name: "O nas", href: "#o-nas" },
-  {
-    name: "Strefa Klienta",
-    href: "https://portfit-elblag.cms.efitness.com.pl/",
-  },
 ];
 
 export const footerNavigation = {

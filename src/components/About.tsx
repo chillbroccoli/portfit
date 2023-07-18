@@ -6,9 +6,9 @@ export function About() {
       <h3 className="text-4xl font-bold tracking-tight text-center">O nas</h3>
       <p className="w-full mx-auto mt-6 text-lg font-light tracking-tight text-center text-gray-200 md:w-1/2">
         Klub Portfit w Elblągu to doskonale wyposażona siłowania oferująca m.in.
-        ćwiczenia fitness power, kardio, a także zajęcia grupowe typu zumba,
-        aerobik i wiele innych. Wszystkich zainteresowanych serdecznie
-        zapraszamy do kontaktu.
+        ćwiczenia fitness power, kardio, a także szeroki zakres zajęć grupowych,
+        rollmasaz i vacupower. Wszystkich zainteresowanych serdecznie zapraszamy
+        do kontaktu.
       </p>
       <Container className="flex items-center justify-center mt-12 overflow-hidden rounded-md shadow-lg">
         <iframe

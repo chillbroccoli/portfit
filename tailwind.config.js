@@ -13,7 +13,7 @@ module.exports = {
         "hero-mobile":
           "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('/hero.jpeg')",
         power: "url('/power.jpg')",
-        instructor: "url('/instructor-2.jpeg')",
+        instructor: "url('/section-2.jpg')",
         group: "url('/group.jpeg')",
       },
     },

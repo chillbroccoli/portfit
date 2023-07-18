@@ -46,6 +46,17 @@ export function Hero() {
                   </li>
                 ))}
               </ul>
+              <a
+                href="https://portfit-elblag.cms.efitness.com.pl/"
+                style={{
+                  clipPath: "polygon(0 0, 100% 1%, 88% 89%, 29% 71%)",
+                }}
+                className="relative flex items-center justify-center w-48 h-24 text-center transition-colors duration-200 ease-in-out bg-lime-600 hover:bg-lime-700"
+              >
+                <span className="absolute pb-4 pl-4 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                  Strefa Klienta
+                </span>
+              </a>
               <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-200 rounded-md lg:hidden hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lime-500">
                 <span className="sr-only">Open main menu</span>
                 {open ? (
