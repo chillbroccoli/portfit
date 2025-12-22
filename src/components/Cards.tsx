@@ -1,11 +1,10 @@
 import multiSport from "@/assets/cards/multisport.webp";
 import fitProfit from "@/assets/cards/fitprofit.webp";
-import okSystem from "@/assets/cards/oksystem.webp";
-import fitFlex from "@/assets/cards/fitflex.webp";
-import beActive from "@/assets/cards/beactive.webp";
+import medicover from "@/assets/cards/medicover.png";
+import pzu from "@/assets/cards/pzu.png";
 import Image from "next/image";
 
-const imgs = [multiSport, fitProfit, okSystem, fitFlex, beActive];
+const imgs = [multiSport, fitProfit, medicover, pzu];
 
 export function Cards() {
   return (
@@ -14,7 +13,7 @@ export function Cards() {
         <h2 className="text-2xl font-bold tracking-tight text-center text-gray-100">
           Obsługujemy karty
         </h2>
-        <div className="grid items-center max-w-xl grid-cols-4 mx-auto mt-4 gap-x-4 gap-y-10 sm:grid-cols-6 lg:grid-cols-5">
+        <div className="grid items-center max-w-xl grid-cols-3 mx-auto mt-4 gap-x-4 gap-y-10 sm:grid-cols-6 lg:grid-cols-4">
           {imgs.map((img, index) => (
             <Image
               key={index}

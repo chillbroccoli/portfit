@@ -1,5 +1,11 @@
 import { footerNavigation } from "@/lib/constants/navigation";
 
+const openingHours = [
+  { days: "Pon - Pt", hours: "8:00 - 22:30" },
+  { days: "Sobota", hours: "10:00 - 18:00" },
+  { days: "Niedziela", hours: "10:00 - 16:00" },
+];
+
 export default function Footer() {
   return (
     <footer>
@@ -19,6 +25,24 @@ export default function Footer() {
             </div>
           ))}
         </nav>
+
+        <div className="mt-10 flex flex-col items-center">
+          <h3 className="text-sm font-semibold text-lime-500 uppercase tracking-wider mb-4">
+            Godziny otwarcia
+          </h3>
+          <div className="space-y-2">
+            {openingHours.map((item) => (
+              <div
+                key={item.days}
+                className="flex justify-between gap-8 text-sm text-gray-300"
+              >
+                <span className="font-medium">{item.days}</span>
+                <span>{item.hours}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="flex justify-center mt-10 space-x-10">
           {footerNavigation.social.map((item) => (
             <a
