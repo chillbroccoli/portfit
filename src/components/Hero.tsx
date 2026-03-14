@@ -85,6 +85,12 @@ export function Hero() {
               </div>
             </Disclosure.Panel>
           </div>
+          <div className="flex items-center justify-center w-full h-[50px] bg-lime-600 text-white text-sm md:text-base font-medium tracking-wide text-center px-4">
+            <p>
+              Nowa lokalizacja - Dom Handlowy Grand, ul. Grunwaldzka 77, Nad
+              Media Expert
+            </p>
+          </div>
           <div className="flex flex-col items-center justify-center py-16 sm:py-32 grow">
             <div className="w-3/4 mx-auto text-center">
               <h1 className="text-5xl font-bold tracking-tighter lg:text-7xl text-lime-500">
