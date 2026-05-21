@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PortFit
 
-## Getting Started
+This project is now a plain static site built with:
 
-First, run the development server:
+- `index.html`
+- `styles.css`
+- `main.js`
+
+No Next.js, React, Tailwind, or Headless UI remains in the runtime stack.
+
+## Run locally
+
+You can either open [index.html](/Users/cappybara/dev/portfit/index.html) directly in a browser or start `live-server`:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then visit [http://127.0.0.1:4173](http://127.0.0.1:4173).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [index.html](/Users/cappybara/dev/portfit/index.html): page structure
+- [styles.css](/Users/cappybara/dev/portfit/styles.css): layout and responsive styling
+- [main.js](/Users/cappybara/dev/portfit/main.js): rendering and mobile menu behavior
+- [assets](/Users/cappybara/dev/portfit/assets): local images and card logos
 
-## Learn More
+## Checks
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run check
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+That validates the JavaScript file parses correctly.
